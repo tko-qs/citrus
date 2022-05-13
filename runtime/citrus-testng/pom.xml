@@ -4,7 +4,7 @@
 
   <parent>
     <artifactId>citrus-runtime</artifactId>
-    <groupId>com.consol.citrus</groupId>
+    <groupId>org.citrusframework.citrus</groupId>
     <version>4.0.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
@@ -15,14 +15,14 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-base</artifactId>
       <version>${project.version}</version>
     </dependency>
 
     <!-- Spring Framework -->
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-spring</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
@@ -65,13 +65,13 @@
               <goal>integration-test</goal>
             </goals>
             <configuration>
-              <groups>com.consol.citrus.ShouldFailGroup</groups>
+              <groups>org.citrusframework.citrus.ShouldFailGroup</groups>
               <excludedGroups>NonExisting</excludedGroups>
             </configuration>
           </execution>
         </executions>
         <configuration>
-          <excludedGroups>com.consol.citrus.ShouldFailGroup</excludedGroups>
+          <excludedGroups>org.citrusframework.citrus.ShouldFailGroup</excludedGroups>
         </configuration>
       </plugin>
     </plugins>

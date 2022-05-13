@@ -4,7 +4,7 @@
 
   <parent>
     <artifactId>citrus-runtime</artifactId>
-    <groupId>com.consol.citrus</groupId>
+    <groupId>org.citrusframework.citrus</groupId>
     <version>4.0.0-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
@@ -30,7 +30,7 @@
           <sourceType>xmlschema</sourceType>
           <catalog>src/main/resources/catalog.xml</catalog>
           <sources>
-            <source>src/main/resources/com/consol/citrus/schema/citrus-cucumber-testcase.xsd</source>
+            <source>src/main/resources/org/citrusframework/citrus/schema/citrus-cucumber-testcase.xsd</source>
           </sources>
           <xjbSources>
             <xjbSource>src/main/resources/binding.xjb</xjbSource>
@@ -51,7 +51,7 @@
               <excludeDefaultDirectories>true</excludeDefaultDirectories>
               <filesets>
                 <fileset>
-                  <directory>${project.build.directory}/generated-sources/jaxb/com/consol/citrus/model/testcase/core</directory>
+                  <directory>${project.build.directory}/generated-sources/jaxb/org/citrusframework/citrus/model/testcase/core</directory>
                   <includes>
                     <include>*.java</include>
                   </includes>
@@ -85,33 +85,33 @@
 
   <dependencies>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-base</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-spring</artifactId>
       <version>${project.version}</version>
       <scope>provided</scope>
     </dependency>
 
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-docker</artifactId>
       <version>${project.version}</version>
       <optional>true</optional>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-http</artifactId>
       <version>${project.version}</version>
       <optional>true</optional>
       <scope>provided</scope>
     </dependency>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-selenium</artifactId>
       <version>${project.version}</version>
       <optional>true</optional>
@@ -148,13 +148,13 @@
     </dependency>
 
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-test-support</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-camel</artifactId>
       <version>${project.version}</version>
       <scope>test</scope>

@@ -4,7 +4,7 @@
           version="2.1"
           extensionBindingPrefixes="xjc">
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-rmi-config.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-rmi-config.xsd">
     <globalBindings>
       <xjc:javaType
               name="java.util.Calendar"
@@ -17,7 +17,7 @@
       <xjc:simple />
     </globalBindings>
     <schemaBindings>
-      <package name="com.consol.citrus.model.config.rmi"/>
+      <package name="org.citrusframework.citrus.model.config.rmi"/>
       <nameXmlTransform>
         <elementName prefix="Rmi" suffix="Model" />
       </nameXmlTransform>

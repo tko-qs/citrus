@@ -21,28 +21,28 @@
   <dependencies>
     <!-- Citrus -->
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-core</artifactId>
       <version>${citrus.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-jms</artifactId>
       <version>${citrus.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-ws</artifactId>
       <version>${citrus.version}</version>
     </dependency>
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-http</artifactId>
       <version>${citrus.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>com.consol.citrus</groupId>
+      <groupId>org.citrusframework.citrus</groupId>
       <artifactId>citrus-testng</artifactId>
       <version>${project.version}</version>
     </dependency>
@@ -83,7 +83,7 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.consol.citrus.mvn</groupId>
+        <groupId>org.citrusframework.citrus.mvn</groupId>
         <artifactId>citrus-maven-plugin</artifactId>
         <version>${citrus.version}</version>
         <configuration>

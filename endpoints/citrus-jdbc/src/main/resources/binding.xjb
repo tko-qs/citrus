@@ -16,18 +16,18 @@
     <xjc:simple />
   </globalBindings>
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-jdbc-config.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-jdbc-config.xsd">
     <schemaBindings>
-      <package name="com.consol.citrus.model.config.jdbc"/>
+      <package name="org.citrusframework.citrus.model.config.jdbc"/>
       <nameXmlTransform>
         <elementName prefix="Jdbc" suffix="Model" />
       </nameXmlTransform>
     </schemaBindings>
   </bindings>
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-jdbc-message.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-jdbc-message.xsd">
     <schemaBindings>
-      <package name="com.consol.citrus.jdbc.model"/>
+      <package name="org.citrusframework.citrus.jdbc.model"/>
     </schemaBindings>
   </bindings>
 

@@ -4,10 +4,9 @@
        xmlns:citrus="http://www.citrusframework.org/schema/config"
        xmlns:citrus-vertx="http://www.citrusframework.org/schema/vertx/config"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                          http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-                         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+
                          http://www.citrusframework.org/schema/config http://www.citrusframework.org/schema/config/citrus-config.xsd
                          http://www.citrusframework.org/schema/vertx/config http://www.citrusframework.org/schema/vertx/config/citrus-vertx-config.xsd">
 
@@ -20,9 +19,9 @@
   </citrus:global-variables>
 
   <!-- Test Listeners -->
-  <bean class="com.consol.citrus.report.MessageTracingTestListener"/>
+  <bean class="org.citrusframework.citrus.report.MessageTracingTestListener"/>
 
-  <bean id="vertxInstanceFactory" class="com.consol.citrus.vertx.factory.CachingVertxInstanceFactory"/>
+  <bean id="vertxInstanceFactory" class="org.citrusframework.citrus.vertx.factory.CachingVertxInstanceFactory"/>
 
   <!-- Vert.x message endpoints -->
   <citrus-vertx:endpoint id="vertxNewsEndpoint"

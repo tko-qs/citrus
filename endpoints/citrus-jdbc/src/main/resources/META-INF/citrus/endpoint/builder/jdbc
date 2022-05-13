@@ -1,1 +1,1 @@
-server=com.consol.citrus.jdbc.server.JdbcServerBuilder
+server=org.citrusframework.citrus.jdbc.server.JdbcServerBuilder

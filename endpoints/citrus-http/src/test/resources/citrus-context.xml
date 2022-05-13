@@ -48,10 +48,10 @@
       <citrus:namespace prefix="hs" uri="http://citrusframework.org/schemas/samples/HelloService.xsd"/>
   </citrus:namespace-context>
 
-  <bean id="formUrlEncodedMessageValidator" class="com.consol.citrus.http.validation.FormUrlEncodedMessageValidator"/>
+  <bean id="formUrlEncodedMessageValidator" class="org.citrusframework.citrus.http.validation.FormUrlEncodedMessageValidator"/>
 
   <!-- Test Listeners -->
-  <bean class="com.consol.citrus.report.MessageTracingTestListener"/>
+  <bean class="org.citrusframework.citrus.report.MessageTracingTestListener"/>
 
   <!-- Http message endpoints -->
   <citrus-http:client id="helloHttpClient"
@@ -61,7 +61,7 @@
   <citrus-http:server id="helloHttpServer"
                       port="11080"
                       auto-start="true"
-                      context-config-location="classpath:com/consol/citrus/http/citrus-http-servlet.xml"
+                      context-config-location="classpath:org/citrusframework/citrus/http/citrus-http-servlet.xml"
                       resource-base="src/test/resources"/>
 
   <citrus-http:client id="echoHttpClient"
@@ -94,7 +94,7 @@
                       request-factory="basicAuthClientRequestFactory"
                       actor="helloClient"/>
 
-  <bean id="basicAuthClientRequestFactory" class="com.consol.citrus.http.client.BasicAuthClientHttpRequestFactory">
+  <bean id="basicAuthClientRequestFactory" class="org.citrusframework.citrus.http.client.BasicAuthClientHttpRequestFactory">
     <property name="params">
       <map>
         <entry key="http.socket.timeout">
@@ -131,7 +131,7 @@
       <list>
         <value>java.util</value>
         <value>java.lang</value>
-        <value>com.consol.citrus</value>
+        <value>org.citrusframework.citrus</value>
       </list>
     </property>
     <property name="watchTopicAdvisories" value="false"/>
@@ -150,7 +150,7 @@
                       port="11082"
                       auto-start="true"
                       root-parent-context="true"
-                      context-config-location="classpath:com/consol/citrus/http/citrus-http-servlet-jms.xml"
+                      context-config-location="classpath:org/citrusframework/citrus/http/citrus-http-servlet-jms.xml"
                       resource-base="src/test/resources"/>
 
   <citrus-http:client id="httpStandaloneClient"
@@ -161,7 +161,7 @@
   <citrus-http:server id="httpStandaloneServer"
                       port="11083"
                       auto-start="true"
-                      context-config-location="classpath:com/consol/citrus/http/citrus-http-standalone-servlet.xml"
+                      context-config-location="classpath:org/citrusframework/citrus/http/citrus-http-standalone-servlet.xml"
                       resource-base="src/test/resources"/>
 
   <citrus:before-test id="defaultBeforeTest">

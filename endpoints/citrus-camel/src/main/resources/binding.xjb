@@ -4,7 +4,7 @@
           version="2.1"
           extensionBindingPrefixes="xjc">
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-camel-config.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-camel-config.xsd">
     <globalBindings>
       <xjc:javaType
               name="java.util.Calendar"
@@ -17,7 +17,7 @@
       <xjc:simple />
     </globalBindings>
     <schemaBindings>
-      <package name="com.consol.citrus.model.config.camel"/>
+      <package name="org.citrusframework.citrus.model.config.camel"/>
       <nameXmlTransform>
         <elementName prefix="Camel" suffix="Model" />
       </nameXmlTransform>

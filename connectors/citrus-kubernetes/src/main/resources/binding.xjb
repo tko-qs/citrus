@@ -4,7 +4,7 @@
           version="2.1"
           extensionBindingPrefixes="xjc">
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-kubernetes-config.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-kubernetes-config.xsd">
     <globalBindings>
       <xjc:javaType
               name="java.util.Calendar"
@@ -17,16 +17,16 @@
       <xjc:simple />
     </globalBindings>
     <schemaBindings>
-      <package name="com.consol.citrus.model.config.kubernetes"/>
+      <package name="org.citrusframework.citrus.model.config.kubernetes"/>
       <nameXmlTransform>
         <elementName prefix="Kubernetes" suffix="Model" />
       </nameXmlTransform>
     </schemaBindings>
   </bindings>
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-kubernetes-testcase.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-kubernetes-testcase.xsd">
     <schemaBindings>
-      <package name="com.consol.citrus.model.testcase.kubernetes"/>
+      <package name="org.citrusframework.citrus.model.testcase.kubernetes"/>
       <nameXmlTransform>
         <elementName suffix="Model" />
       </nameXmlTransform>

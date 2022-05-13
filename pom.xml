@@ -18,7 +18,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.consol.citrus</groupId>
+  <groupId>org.citrusframework.citrus</groupId>
   <artifactId>citrus</artifactId>
   <packaging>pom</packaging>
   <version>4.0.0-SNAPSHOT</version>
@@ -760,22 +760,6 @@
         <version>${shrinkwrap.impl.version}</version>
       </dependency>
 
-      <!-- Citrus JDBC dependencies -->
-      <dependency>
-        <groupId>com.consol.citrus</groupId>
-        <artifactId>citrus-db-server</artifactId>
-        <version>${citrus.db.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>

@@ -4,7 +4,7 @@
           version="2.1"
           extensionBindingPrefixes="xjc">
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-jms-config.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-jms-config.xsd">
     <globalBindings>
       <xjc:javaType
               name="java.util.Calendar"
@@ -17,16 +17,16 @@
       <xjc:simple />
     </globalBindings>
     <schemaBindings>
-      <package name="com.consol.citrus.model.config.jms"/>
+      <package name="org.citrusframework.citrus.model.config.jms"/>
       <nameXmlTransform>
         <elementName prefix="Jms" suffix="Model" />
       </nameXmlTransform>
     </schemaBindings>
   </bindings>
 
-  <bindings schemaLocation="com/consol/citrus/schema/citrus-jms-testcase.xsd">
+  <bindings schemaLocation="org/citrusframework/citrus/schema/citrus-jms-testcase.xsd">
     <schemaBindings>
-      <package name="com.consol.citrus.model.testcase.jms"/>
+      <package name="org.citrusframework.citrus.model.testcase.jms"/>
       <nameXmlTransform>
         <elementName suffix="Model" />
       </nameXmlTransform>

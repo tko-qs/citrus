@@ -1,3 +1,0 @@
-<!ELEMENT root (message)>
-<!ELEMENT message (text)>
-<!ELEMENT text (#PCDATA)>
