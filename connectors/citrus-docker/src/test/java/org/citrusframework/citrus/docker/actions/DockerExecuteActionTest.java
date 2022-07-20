@@ -16,15 +16,49 @@
 
 package org.citrusframework.citrus.docker.actions;
 
-import com.github.dockerjava.api.command.*;
+import java.io.File;
+import java.util.Collections;
+import java.util.UUID;
+
+import org.citrusframework.citrus.docker.client.DockerClient;
+import org.citrusframework.citrus.docker.command.ContainerCreate;
+import org.citrusframework.citrus.docker.command.ContainerInspect;
+import org.citrusframework.citrus.docker.command.ContainerRemove;
+import org.citrusframework.citrus.docker.command.ContainerStart;
+import org.citrusframework.citrus.docker.command.ContainerStop;
+import org.citrusframework.citrus.docker.command.ContainerWait;
+import org.citrusframework.citrus.docker.command.ImageBuild;
+import org.citrusframework.citrus.docker.command.ImageInspect;
+import org.citrusframework.citrus.docker.command.ImagePull;
+import org.citrusframework.citrus.docker.command.ImageRemove;
+import org.citrusframework.citrus.docker.command.Info;
+import org.citrusframework.citrus.docker.command.Ping;
+import org.citrusframework.citrus.docker.command.Version;
+import org.citrusframework.citrus.docker.message.DockerMessageHeaders;
+import org.citrusframework.citrus.testng.AbstractTestNGUnitTest;
+import com.github.dockerjava.api.command.BuildImageCmd;
+import com.github.dockerjava.api.command.BuildImageResultCallback;
+import com.github.dockerjava.api.command.CreateContainerCmd;
+import com.github.dockerjava.api.command.CreateContainerResponse;
+import com.github.dockerjava.api.command.InfoCmd;
+import com.github.dockerjava.api.command.InspectContainerCmd;
+import com.github.dockerjava.api.command.InspectContainerResponse;
+import com.github.dockerjava.api.command.InspectImageCmd;
+import com.github.dockerjava.api.command.InspectImageResponse;
+import com.github.dockerjava.api.command.PingCmd;
+import com.github.dockerjava.api.command.PullImageCmd;
+import com.github.dockerjava.api.command.PullImageResultCallback;
+import com.github.dockerjava.api.command.RemoveContainerCmd;
+import com.github.dockerjava.api.command.RemoveImageCmd;
+import com.github.dockerjava.api.command.StartContainerCmd;
+import com.github.dockerjava.api.command.StopContainerCmd;
+import com.github.dockerjava.api.command.VersionCmd;
+import com.github.dockerjava.api.command.WaitContainerCmd;
+import com.github.dockerjava.api.command.WaitContainerResultCallback;
 import com.github.dockerjava.api.model.BuildResponseItem;
 import com.github.dockerjava.api.model.PullResponseItem;
 import com.github.dockerjava.api.model.ResponseItem;
 import com.github.dockerjava.api.model.WaitResponse;
-import org.citrusframework.citrus.docker.client.DockerClient;
-import org.citrusframework.citrus.docker.command.*;
-import org.citrusframework.citrus.docker.message.DockerMessageHeaders;
-import org.citrusframework.citrus.testng.AbstractTestNGUnitTest;
 import org.mockito.Mockito;
 import org.mockito.stubbing.Answer;
 import org.springframework.core.io.ClassPathResource;
@@ -32,11 +66,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.File;
-import java.util.Collections;
-import java.util.UUID;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 public class DockerExecuteActionTest extends AbstractTestNGUnitTest {
 

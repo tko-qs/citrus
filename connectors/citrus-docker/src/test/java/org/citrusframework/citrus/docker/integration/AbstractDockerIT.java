@@ -16,19 +16,19 @@
 
 package org.citrusframework.citrus.docker.integration;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+
+import org.citrusframework.citrus.testng.spring.TestNGCitrusSpringSupport;
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.core.DockerClientImpl;
 import com.github.dockerjava.jaxrs.JerseyDockerCmdExecFactory;
-import org.citrusframework.citrus.testng.spring.TestNGCitrusSpringSupport;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.IHookCallBack;
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeSuite;
-
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author Christoph Deppisch

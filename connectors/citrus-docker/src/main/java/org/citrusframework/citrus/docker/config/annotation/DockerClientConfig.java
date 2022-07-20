@@ -16,12 +16,12 @@
 
 package org.citrusframework.citrus.docker.config.annotation;
 
-import org.citrusframework.citrus.annotations.CitrusEndpointConfig;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
+
+import org.citrusframework.citrus.annotations.CitrusEndpointConfig;
 
 /**
  * @author Christoph Deppisch

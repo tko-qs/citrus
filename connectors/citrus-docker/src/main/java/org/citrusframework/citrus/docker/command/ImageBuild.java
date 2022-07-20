@@ -16,19 +16,19 @@
 
 package org.citrusframework.citrus.docker.command;
 
-import com.github.dockerjava.api.command.BuildImageCmd;
-import com.github.dockerjava.api.command.BuildImageResultCallback;
-import com.github.dockerjava.api.model.BuildResponseItem;
+import java.io.IOException;
+import java.util.Collections;
+
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.docker.message.DockerMessageHeaders;
 import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
 import org.citrusframework.citrus.util.FileUtils;
+import com.github.dockerjava.api.command.BuildImageCmd;
+import com.github.dockerjava.api.command.BuildImageResultCallback;
+import com.github.dockerjava.api.model.BuildResponseItem;
 import org.springframework.core.io.Resource;
-
-import java.io.IOException;
-import java.util.Collections;
 
 /**
  * @author Christoph Deppisch

@@ -1,11 +1,11 @@
 package org.citrusframework.citrus.docker.command;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.citrusframework.citrus.TestActionBuilder;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.validation.MessageValidator;
 import org.citrusframework.citrus.validation.context.ValidationContext;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * @author Christoph Deppisch

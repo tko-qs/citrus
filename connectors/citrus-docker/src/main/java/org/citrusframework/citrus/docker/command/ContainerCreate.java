@@ -16,18 +16,22 @@
 
 package org.citrusframework.citrus.docker.command;
 
-import com.github.dockerjava.api.command.CreateContainerCmd;
-import com.github.dockerjava.api.command.CreateContainerResponse;
-import com.github.dockerjava.api.command.InspectContainerCmd;
-import com.github.dockerjava.api.command.InspectContainerResponse;
-import com.github.dockerjava.api.model.*;
+import java.util.stream.Stream;
+
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.docker.message.DockerMessageHeaders;
+import com.github.dockerjava.api.command.CreateContainerCmd;
+import com.github.dockerjava.api.command.CreateContainerResponse;
+import com.github.dockerjava.api.command.InspectContainerCmd;
+import com.github.dockerjava.api.command.InspectContainerResponse;
+import com.github.dockerjava.api.model.Capability;
+import com.github.dockerjava.api.model.ExposedPort;
+import com.github.dockerjava.api.model.PortBinding;
+import com.github.dockerjava.api.model.Ports;
+import com.github.dockerjava.api.model.Volume;
 import org.springframework.util.StringUtils;
-
-import java.util.stream.Stream;
 
 /**
  * @author Christoph Deppisch

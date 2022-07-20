@@ -16,25 +16,39 @@
 
 package org.citrusframework.citrus.docker.actions;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import java.util.Collections;
+import java.util.Optional;
+
 import org.citrusframework.citrus.AbstractTestActionBuilder;
 import org.citrusframework.citrus.actions.AbstractTestAction;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.client.DockerClient;
-import org.citrusframework.citrus.docker.command.*;
+import org.citrusframework.citrus.docker.command.AbstractDockerCommand;
+import org.citrusframework.citrus.docker.command.AbstractDockerCommandBuilder;
+import org.citrusframework.citrus.docker.command.ContainerCreate;
+import org.citrusframework.citrus.docker.command.ContainerInspect;
+import org.citrusframework.citrus.docker.command.ContainerStart;
+import org.citrusframework.citrus.docker.command.ContainerStop;
+import org.citrusframework.citrus.docker.command.ContainerWait;
+import org.citrusframework.citrus.docker.command.DockerCommand;
+import org.citrusframework.citrus.docker.command.ImageBuild;
+import org.citrusframework.citrus.docker.command.ImageInspect;
+import org.citrusframework.citrus.docker.command.ImagePull;
+import org.citrusframework.citrus.docker.command.ImageRemove;
+import org.citrusframework.citrus.docker.command.Info;
+import org.citrusframework.citrus.docker.command.Ping;
+import org.citrusframework.citrus.docker.command.Version;
 import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
 import org.citrusframework.citrus.exceptions.ValidationException;
 import org.citrusframework.citrus.message.DefaultMessage;
 import org.citrusframework.citrus.validation.MessageValidator;
 import org.citrusframework.citrus.validation.context.ValidationContext;
 import org.citrusframework.citrus.validation.json.JsonMessageValidationContext;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.StringUtils;
-
-import java.util.Collections;
-import java.util.Optional;
 
 /**
  * Executes docker command with given docker client implementation. Possible command result is stored within command object.

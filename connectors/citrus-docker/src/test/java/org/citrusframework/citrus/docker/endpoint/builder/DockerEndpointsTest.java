@@ -19,12 +19,12 @@
 
 package org.citrusframework.citrus.docker.endpoint.builder;
 
+import java.util.Map;
+
 import org.citrusframework.citrus.docker.client.DockerClientBuilder;
 import org.citrusframework.citrus.endpoint.EndpointBuilder;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.Map;
 
 /**
  * @author Christoph Deppisch

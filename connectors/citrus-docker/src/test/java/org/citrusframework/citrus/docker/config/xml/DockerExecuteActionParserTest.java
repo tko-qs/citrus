@@ -20,6 +20,7 @@ import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.docker.command.*;
 import org.citrusframework.citrus.testng.AbstractActionParserTest;
+import org.citrusframework.citrus.docker.command.*;
 import org.springframework.beans.factory.BeanDefinitionStoreException;
 import org.testng.Assert;
 import org.testng.annotations.Test;

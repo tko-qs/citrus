@@ -16,11 +16,11 @@
 
 package org.citrusframework.citrus.docker.command;
 
-import com.github.dockerjava.api.command.StopContainerCmd;
-import com.github.dockerjava.api.model.ResponseItem;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
+import com.github.dockerjava.api.command.StopContainerCmd;
+import com.github.dockerjava.api.model.ResponseItem;
 
 /**
  * @author Christoph Deppisch

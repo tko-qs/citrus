@@ -16,8 +16,8 @@
 
 package org.citrusframework.citrus.docker.client;
 
-import com.github.dockerjava.core.DefaultDockerClientConfig;
 import org.citrusframework.citrus.endpoint.AbstractEndpointBuilder;
+import com.github.dockerjava.core.DefaultDockerClientConfig;
 
 /**
  * @author Christoph Deppisch

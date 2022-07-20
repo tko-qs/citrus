@@ -16,13 +16,13 @@
 
 package org.citrusframework.citrus.docker.config.xml;
 
-import com.github.dockerjava.core.DefaultDockerClientConfig;
+import java.util.Map;
+
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.testng.AbstractBeanDefinitionParserTest;
+import com.github.dockerjava.core.DefaultDockerClientConfig;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.Map;
 
 /**
  * @author Christoph Deppisch

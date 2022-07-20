@@ -18,6 +18,7 @@ package org.citrusframework.citrus.docker.config.handler;
 
 import org.citrusframework.citrus.docker.command.*;
 import org.citrusframework.citrus.docker.config.xml.DockerExecuteActionParser;
+import org.citrusframework.citrus.docker.command.*;
 import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
 
 /**

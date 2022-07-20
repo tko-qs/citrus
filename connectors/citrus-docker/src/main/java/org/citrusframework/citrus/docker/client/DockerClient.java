@@ -16,6 +16,8 @@
 
 package org.citrusframework.citrus.docker.client;
 
+import java.util.Objects;
+
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.command.DockerCommand;
 import org.citrusframework.citrus.endpoint.AbstractEndpoint;
@@ -29,8 +31,6 @@ import org.citrusframework.citrus.messaging.ReplyConsumer;
 import org.citrusframework.citrus.messaging.SelectiveConsumer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.util.Objects;
 
 /**
  * Docker client uses Java docker client implementation for executing docker commands.

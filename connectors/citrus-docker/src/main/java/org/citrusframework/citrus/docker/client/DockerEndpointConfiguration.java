@@ -16,13 +16,13 @@
 
 package org.citrusframework.citrus.docker.client;
 
+import org.citrusframework.citrus.endpoint.AbstractPollableEndpointConfiguration;
+import org.citrusframework.citrus.message.DefaultMessageCorrelator;
+import org.citrusframework.citrus.message.MessageCorrelator;
 import com.github.dockerjava.core.DefaultDockerClientConfig;
 import com.github.dockerjava.core.DockerClientConfig;
 import com.github.dockerjava.core.DockerClientImpl;
 import com.github.dockerjava.okhttp.OkDockerHttpClient;
-import org.citrusframework.citrus.endpoint.AbstractPollableEndpointConfiguration;
-import org.citrusframework.citrus.message.DefaultMessageCorrelator;
-import org.citrusframework.citrus.message.MessageCorrelator;
 
 /**
  * @author Christoph Deppisch

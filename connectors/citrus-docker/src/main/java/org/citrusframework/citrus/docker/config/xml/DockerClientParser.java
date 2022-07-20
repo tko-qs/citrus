@@ -16,12 +16,12 @@
 
 package org.citrusframework.citrus.docker.config.xml;
 
-import com.github.dockerjava.core.DefaultDockerClientConfig;
 import org.citrusframework.citrus.config.xml.AbstractEndpointParser;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.docker.client.DockerEndpointConfiguration;
 import org.citrusframework.citrus.endpoint.Endpoint;
 import org.citrusframework.citrus.endpoint.EndpointConfiguration;
+import com.github.dockerjava.core.DefaultDockerClientConfig;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;
 import org.springframework.beans.factory.xml.ParserContext;
 import org.w3c.dom.Element;

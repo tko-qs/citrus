@@ -16,7 +16,6 @@
 
 package org.citrusframework.citrus.docker.config.xml;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.citrusframework.citrus.config.util.BeanDefinitionParserUtils;
 import org.citrusframework.citrus.config.xml.AbstractTestActionFactoryBean;
 import org.citrusframework.citrus.config.xml.DescriptionElementParser;
@@ -25,6 +24,7 @@ import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.docker.command.DockerCommand;
 import org.citrusframework.citrus.validation.MessageValidator;
 import org.citrusframework.citrus.validation.context.ValidationContext;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

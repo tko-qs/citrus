@@ -16,10 +16,10 @@
 
 package org.citrusframework.citrus.docker.command;
 
-import com.github.dockerjava.api.command.VersionCmd;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
+import com.github.dockerjava.api.command.VersionCmd;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

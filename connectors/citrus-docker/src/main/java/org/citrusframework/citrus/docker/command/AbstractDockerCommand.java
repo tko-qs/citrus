@@ -16,14 +16,14 @@
 
 package org.citrusframework.citrus.docker.command;
 
-import com.github.dockerjava.api.model.ResponseItem;
-import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
-import org.springframework.util.ReflectionUtils;
-
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.citrusframework.citrus.context.TestContext;
+import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
+import com.github.dockerjava.api.model.ResponseItem;
+import org.springframework.util.ReflectionUtils;
 
 /**
  * @author Christoph Deppisch

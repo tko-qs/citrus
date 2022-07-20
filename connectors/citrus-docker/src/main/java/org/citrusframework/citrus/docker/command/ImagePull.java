@@ -16,13 +16,13 @@
 
 package org.citrusframework.citrus.docker.command;
 
-import com.github.dockerjava.api.command.PullImageCmd;
-import com.github.dockerjava.api.command.PullImageResultCallback;
-import com.github.dockerjava.api.model.PullResponseItem;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
+import com.github.dockerjava.api.command.PullImageCmd;
+import com.github.dockerjava.api.command.PullImageResultCallback;
+import com.github.dockerjava.api.model.PullResponseItem;
 
 /**
  * @author Christoph Deppisch

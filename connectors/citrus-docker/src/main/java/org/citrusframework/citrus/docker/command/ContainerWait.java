@@ -16,13 +16,13 @@
 
 package org.citrusframework.citrus.docker.command;
 
-import com.github.dockerjava.api.command.WaitContainerCmd;
-import com.github.dockerjava.api.command.WaitContainerResultCallback;
-import com.github.dockerjava.api.model.WaitResponse;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.docker.message.DockerMessageHeaders;
+import com.github.dockerjava.api.command.WaitContainerCmd;
+import com.github.dockerjava.api.command.WaitContainerResultCallback;
+import com.github.dockerjava.api.model.WaitResponse;
 
 /**
  * @author Christoph Deppisch

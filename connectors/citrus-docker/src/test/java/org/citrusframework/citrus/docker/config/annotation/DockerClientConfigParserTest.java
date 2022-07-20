@@ -16,7 +16,8 @@
 
 package org.citrusframework.citrus.docker.config.annotation;
 
-import com.github.dockerjava.core.DefaultDockerClientConfig;
+import java.util.Map;
+
 import org.citrusframework.citrus.annotations.CitrusAnnotations;
 import org.citrusframework.citrus.annotations.CitrusEndpoint;
 import org.citrusframework.citrus.config.annotation.AnnotationConfigParser;
@@ -24,12 +25,11 @@ import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.endpoint.direct.annotation.DirectEndpointConfigParser;
 import org.citrusframework.citrus.endpoint.direct.annotation.DirectSyncEndpointConfigParser;
 import org.citrusframework.citrus.testng.AbstractTestNGUnitTest;
+import com.github.dockerjava.core.DefaultDockerClientConfig;
 import org.mockito.MockitoAnnotations;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-import java.util.Map;
 
 /**
  * @author Christoph Deppisch
