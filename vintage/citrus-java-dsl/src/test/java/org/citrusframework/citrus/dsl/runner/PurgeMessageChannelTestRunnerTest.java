@@ -16,14 +16,17 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.PurgeMessageChannelAction;
 import org.citrusframework.citrus.container.SequenceAfterTest;
 import org.citrusframework.citrus.container.SequenceBeforeTest;
-import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
-import org.citrusframework.citrus.report.TestActionListeners;
 import org.citrusframework.citrus.spi.ReferenceResolver;
+import org.citrusframework.citrus.context.TestContext;
+import org.citrusframework.citrus.report.TestActionListeners;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.springframework.integration.channel.QueueChannel;
 import org.springframework.integration.core.MessageSelector;
@@ -32,10 +35,9 @@ import org.springframework.messaging.core.DestinationResolver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

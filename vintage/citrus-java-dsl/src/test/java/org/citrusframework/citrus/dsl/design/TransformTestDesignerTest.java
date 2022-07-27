@@ -16,6 +16,9 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.TransformAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
@@ -23,9 +26,6 @@ import org.mockito.Mockito;
 import org.springframework.core.io.Resource;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
 
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.when;

@@ -16,6 +16,9 @@
 
 package org.citrusframework.citrus.integration.runner;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.runner.AbstractTestBehavior;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestRunner;
@@ -29,9 +32,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpMethod;
 import org.springframework.util.SocketUtils;
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.IOException;
 
 @Test
 public class WaitTestRunnerIT extends TestNGCitrusTestRunner {

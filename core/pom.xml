@@ -18,7 +18,7 @@
     <module>citrus-api</module>
     <module>citrus-base</module>
     <module>citrus-spring</module>
+    <module>citrus-db</module>
   </modules>
 
 </project>
-

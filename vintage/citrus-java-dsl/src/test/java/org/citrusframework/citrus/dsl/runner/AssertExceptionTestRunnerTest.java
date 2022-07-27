@@ -22,8 +22,8 @@ import org.citrusframework.citrus.actions.EchoAction;
 import org.citrusframework.citrus.actions.FailAction;
 import org.citrusframework.citrus.container.Assert;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

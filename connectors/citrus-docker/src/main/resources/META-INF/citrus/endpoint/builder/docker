@@ -1,1 +1,1 @@
-client=DockerClientBuilder
+client=org.citrusframework.citrus.docker.client.DockerClientBuilder

@@ -16,13 +16,13 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.util.concurrent.TimeUnit;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.SleepAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author Christoph Deppisch

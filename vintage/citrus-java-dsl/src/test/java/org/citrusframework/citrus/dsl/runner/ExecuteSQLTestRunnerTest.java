@@ -16,6 +16,9 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.io.File;
+import java.io.IOException;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.ExecuteSQLAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
@@ -26,9 +29,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.IOException;
 
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.verify;

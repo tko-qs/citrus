@@ -20,10 +20,7 @@ import org.citrusframework.citrus.annotations.CitrusResource;
 import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestRunner;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * @author Christoph Deppisch

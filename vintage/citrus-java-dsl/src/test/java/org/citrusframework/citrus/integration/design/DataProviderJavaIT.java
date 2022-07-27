@@ -16,8 +16,8 @@
 
 package org.citrusframework.citrus.integration.design;
 
-import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
+import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.testng.CitrusParameters;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

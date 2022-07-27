@@ -16,6 +16,12 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.AbstractTestAction;
 import org.citrusframework.citrus.container.SequenceAfterTest;
@@ -30,19 +36,20 @@ import org.citrusframework.citrus.ws.validation.SoapFaultValidator;
 import org.citrusframework.citrus.xml.StringSource;
 import org.mockito.Mockito;
 import org.springframework.core.io.Resource;
-import org.springframework.ws.soap.*;
+import org.springframework.ws.soap.SoapBody;
+import org.springframework.ws.soap.SoapFault;
+import org.springframework.ws.soap.SoapFaultDetail;
+import org.springframework.ws.soap.SoapFaultDetailElement;
+import org.springframework.ws.soap.SoapMessage;
 import org.springframework.ws.soap.client.SoapFaultClientException;
 import org.springframework.ws.soap.server.endpoint.SoapFaultDefinition;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 public class AssertSoapFaultTestRunnerTest extends UnitTestSupport {
 
@@ -53,7 +60,7 @@ public class AssertSoapFaultTestRunnerTest extends UnitTestSupport {
     private SoapFaultValidator soapFaultValidator = Mockito.mock(SoapFaultValidator.class);
     private ReferenceResolver referenceResolver = Mockito.mock(ReferenceResolver.class);
 
-    private SoapMessage soapMessage = Mockito.mock(org.springframework.ws.soap.SoapMessage.class);
+    private SoapMessage soapMessage = Mockito.mock(SoapMessage.class);
     private SoapBody soapBody = Mockito.mock(SoapBody.class);
     private SoapFault soapFault = Mockito.mock(SoapFault.class);
     private SoapFaultDetail soapFaultDetail = Mockito.mock(SoapFaultDetail.class);

@@ -18,10 +18,7 @@ package org.citrusframework.citrus.dsl.design;
 
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
-import org.citrusframework.citrus.docker.command.ContainerCreate;
-import org.citrusframework.citrus.docker.command.Info;
-import org.citrusframework.citrus.docker.command.Ping;
-import org.citrusframework.citrus.docker.command.Version;
+import org.citrusframework.citrus.docker.command.*;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;

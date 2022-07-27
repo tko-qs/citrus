@@ -16,25 +16,29 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.util.HashMap;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.PurgeEndpointAction;
 import org.citrusframework.citrus.container.SequenceAfterTest;
 import org.citrusframework.citrus.container.SequenceBeforeTest;
+import org.citrusframework.citrus.spi.ReferenceResolver;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.endpoint.Endpoint;
 import org.citrusframework.citrus.exceptions.ActionTimeoutException;
 import org.citrusframework.citrus.messaging.Consumer;
 import org.citrusframework.citrus.messaging.SelectiveConsumer;
 import org.citrusframework.citrus.report.TestActionListeners;
-import org.citrusframework.citrus.spi.ReferenceResolver;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.doThrow;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

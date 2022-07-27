@@ -16,13 +16,13 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.util.Collections;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.TraceVariablesAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.Collections;
 
 public class TraceVariablesTestRunnerTest extends UnitTestSupport {
 

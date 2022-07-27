@@ -18,23 +18,17 @@ package org.citrusframework.citrus.integration.design;
 
 import org.citrusframework.citrus.Citrus;
 import org.citrusframework.citrus.actions.AbstractTestAction;
-import org.citrusframework.citrus.annotations.CitrusEndpoint;
-import org.citrusframework.citrus.annotations.CitrusFramework;
-import org.citrusframework.citrus.annotations.CitrusResource;
-import org.citrusframework.citrus.annotations.CitrusTest;
+import org.citrusframework.citrus.annotations.*;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.dsl.design.TestDesigner;
+import org.citrusframework.citrus.functions.Functions;
 import org.citrusframework.citrus.dsl.runner.TestRunner;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTest;
 import org.citrusframework.citrus.endpoint.Endpoint;
-import org.citrusframework.citrus.functions.Functions;
 import org.citrusframework.citrus.jms.config.annotation.JmsEndpointConfig;
 import org.citrusframework.citrus.testng.CitrusParameters;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 /**
  * @author Christoph Deppisch

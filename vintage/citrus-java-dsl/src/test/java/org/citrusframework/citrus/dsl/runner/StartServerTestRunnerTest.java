@@ -18,8 +18,8 @@ package org.citrusframework.citrus.dsl.runner;
 
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.StartServerAction;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.server.Server;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;

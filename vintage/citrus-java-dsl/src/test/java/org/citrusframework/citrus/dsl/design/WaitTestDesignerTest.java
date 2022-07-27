@@ -16,6 +16,8 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import java.io.File;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.EchoAction;
 import org.citrusframework.citrus.condition.ActionCondition;
@@ -29,8 +31,6 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.File;
 
 import static org.mockito.Mockito.when;
 

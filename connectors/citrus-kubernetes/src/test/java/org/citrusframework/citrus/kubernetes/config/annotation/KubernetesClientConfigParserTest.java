@@ -99,7 +99,7 @@ public class KubernetesClientConfigParserTest extends AbstractTestNGUnitTest {
     @Test
     public void testLookupAll() {
         Map<String, AnnotationConfigParser> validators = AnnotationConfigParser.lookup();
-        Assert.assertEquals(validators.size(), 5L);
+        Assert.assertEquals(validators.size(), 6L);
         Assert.assertNotNull(validators.get("direct.async"));
         Assert.assertEquals(validators.get("direct.async").getClass(), DirectEndpointConfigParser.class);
         Assert.assertNotNull(validators.get("direct.sync"));
@@ -110,6 +110,8 @@ public class KubernetesClientConfigParserTest extends AbstractTestNGUnitTest {
         Assert.assertEquals(validators.get("http.server").getClass(), HttpServerConfigParser.class);
         Assert.assertNotNull(validators.get("k8s.client"));
         Assert.assertEquals(validators.get("k8s.client").getClass(), KubernetesClientConfigParser.class);
+        Assert.assertNotNull(validators.get("kubernetes.client"));
+        Assert.assertEquals(validators.get("kubernetes.client").getClass(), KubernetesClientConfigParser.class);
     }
 
     @Test

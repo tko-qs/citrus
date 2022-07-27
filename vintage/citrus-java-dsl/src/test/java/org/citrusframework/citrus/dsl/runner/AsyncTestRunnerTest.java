@@ -16,21 +16,23 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.AbstractTestAction;
 import org.citrusframework.citrus.actions.EchoAction;
 import org.citrusframework.citrus.actions.SleepAction;
 import org.citrusframework.citrus.container.Async;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.exceptions.TestCaseFailedException;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.TimeUnit;
-
-import static org.testng.Assert.*;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 /**
  * @author Christoph Deppisch

@@ -16,14 +16,14 @@
 
 package org.citrusframework.citrus.integration.runner;
 
+import javax.sql.DataSource;
+
 import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestRunner;
 import org.citrusframework.citrus.script.ScriptTypes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.testng.annotations.Test;
-
-import javax.sql.DataSource;
 
 /**
  * @author Christoph Deppisch

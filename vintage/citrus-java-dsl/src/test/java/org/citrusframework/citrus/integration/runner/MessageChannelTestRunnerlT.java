@@ -21,9 +21,7 @@ import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestRunner;
 import org.citrusframework.citrus.message.MessageType;
 import org.testng.annotations.Test;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Christoph Deppisch

@@ -17,9 +17,25 @@
 package org.citrusframework.citrus.dsl.design;
 
 import org.citrusframework.citrus.TestCase;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
-import org.citrusframework.citrus.selenium.actions.*;
+import org.citrusframework.citrus.selenium.actions.AlertAction;
+import org.citrusframework.citrus.selenium.actions.CheckInputAction;
+import org.citrusframework.citrus.selenium.actions.ClearBrowserCacheAction;
+import org.citrusframework.citrus.selenium.actions.ClickAction;
+import org.citrusframework.citrus.selenium.actions.CloseWindowAction;
+import org.citrusframework.citrus.selenium.actions.FindElementAction;
+import org.citrusframework.citrus.selenium.actions.GetStoredFileAction;
+import org.citrusframework.citrus.selenium.actions.HoverAction;
+import org.citrusframework.citrus.selenium.actions.JavaScriptAction;
+import org.citrusframework.citrus.selenium.actions.NavigateAction;
+import org.citrusframework.citrus.selenium.actions.OpenWindowAction;
+import org.citrusframework.citrus.selenium.actions.SetInputAction;
+import org.citrusframework.citrus.selenium.actions.StartBrowserAction;
+import org.citrusframework.citrus.selenium.actions.StopBrowserAction;
+import org.citrusframework.citrus.selenium.actions.StoreFileAction;
+import org.citrusframework.citrus.selenium.actions.SwitchWindowAction;
+import org.citrusframework.citrus.selenium.actions.WaitUntilAction;
 import org.citrusframework.citrus.selenium.endpoint.SeleniumBrowser;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.openqa.selenium.By;
 import org.testng.Assert;

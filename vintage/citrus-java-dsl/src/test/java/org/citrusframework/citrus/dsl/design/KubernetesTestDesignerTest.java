@@ -17,10 +17,10 @@
 package org.citrusframework.citrus.dsl.design;
 
 import org.citrusframework.citrus.TestCase;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.kubernetes.actions.KubernetesExecuteAction;
 import org.citrusframework.citrus.kubernetes.command.*;
 import org.citrusframework.citrus.kubernetes.message.KubernetesMessageHeaders;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -16,8 +16,8 @@
 
 package org.citrusframework.citrus.integration.design;
 
-import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
+import org.citrusframework.citrus.annotations.CitrusTest;
 import org.testng.annotations.Test;
 
 /**
@@ -40,7 +40,7 @@ public class LoadPropertiesJavaIT extends TestNGCitrusTestDesigner {
 
         groovy("import org.citrusframework.citrus.*\n" +
           "import org.citrusframework.citrus.variable.*\n" +
-          "import TestContext\n" +
+          "import org.citrusframework.citrus.context.TestContext\n" +
           "import org.citrusframework.citrus.script.GroovyAction.ScriptExecutor\n" +
           "import org.testng.Assert;\n" +
           "public class GScript implements ScriptExecutor {\n" +

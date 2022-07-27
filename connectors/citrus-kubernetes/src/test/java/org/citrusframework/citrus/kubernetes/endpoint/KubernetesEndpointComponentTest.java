@@ -70,7 +70,7 @@ public class KubernetesEndpointComponentTest {
     @Test
     public void testLookupAll() {
         Map<String, EndpointComponent> validators = EndpointComponent.lookup();
-        Assert.assertEquals(validators.size(), 4L);
+        Assert.assertEquals(validators.size(), 5L);
         Assert.assertNotNull(validators.get("direct"));
         Assert.assertEquals(validators.get("direct").getClass(), DirectEndpointComponent.class);
         Assert.assertNotNull(validators.get("http"));
@@ -79,6 +79,8 @@ public class KubernetesEndpointComponentTest {
         Assert.assertEquals(validators.get("https").getClass(), HttpsEndpointComponent.class);
         Assert.assertNotNull(validators.get("k8s"));
         Assert.assertEquals(validators.get("k8s").getClass(), KubernetesEndpointComponent.class);
+        Assert.assertNotNull(validators.get("kubernetes"));
+        Assert.assertEquals(validators.get("kubernetes").getClass(), KubernetesEndpointComponent.class);
     }
 
     @Test

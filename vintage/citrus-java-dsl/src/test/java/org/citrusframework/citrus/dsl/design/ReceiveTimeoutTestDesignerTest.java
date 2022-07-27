@@ -16,19 +16,19 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import java.util.HashMap;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.ReceiveTimeoutAction;
 import org.citrusframework.citrus.container.SequenceAfterTest;
 import org.citrusframework.citrus.container.SequenceBeforeTest;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
+import org.citrusframework.citrus.spi.ReferenceResolver;
 import org.citrusframework.citrus.endpoint.Endpoint;
 import org.citrusframework.citrus.report.TestActionListeners;
-import org.citrusframework.citrus.spi.ReferenceResolver;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.HashMap;
 
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.when;

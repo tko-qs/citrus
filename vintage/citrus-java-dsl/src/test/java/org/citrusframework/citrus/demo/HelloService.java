@@ -16,9 +16,10 @@
 
 package org.citrusframework.citrus.demo;
 
+import org.springframework.messaging.Message;
+
 import org.citrusframework.citrus.demo.model.HelloRequest;
 import org.citrusframework.citrus.demo.model.HelloResponse;
-import org.springframework.messaging.Message;
 
 /**
  * @author Christoph Deppisch

@@ -16,11 +16,9 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
-import org.apache.http.entity.ContentType;
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.ReceiveMessageAction;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.endpoint.resolver.EndpointUriResolver;
 import org.citrusframework.citrus.http.client.HttpClient;
 import org.citrusframework.citrus.http.client.HttpEndpointConfiguration;
@@ -30,16 +28,21 @@ import org.citrusframework.citrus.http.message.HttpMessageHeaders;
 import org.citrusframework.citrus.http.server.HttpServer;
 import org.citrusframework.citrus.message.MessageHeaders;
 import org.citrusframework.citrus.messaging.SelectiveConsumer;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.validation.context.HeaderValidationContext;
 import org.citrusframework.citrus.validation.json.JsonMessageValidationContext;
 import org.citrusframework.citrus.validation.xml.XmlMessageValidationContext;
+import org.apache.http.entity.ContentType;
 import org.mockito.Mockito;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyLong;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

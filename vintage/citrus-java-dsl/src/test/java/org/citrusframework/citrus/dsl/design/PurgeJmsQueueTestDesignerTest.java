@@ -16,15 +16,15 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import javax.jms.ConnectionFactory;
+import javax.jms.Queue;
+
 import org.citrusframework.citrus.TestCase;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.jms.actions.PurgeJmsQueuesAction;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import javax.jms.ConnectionFactory;
-import javax.jms.Queue;
 
 /**
  * @author Christoph Deppisch

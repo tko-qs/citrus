@@ -19,7 +19,13 @@ package org.citrusframework.citrus.dsl.design;
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.zookeeper.actions.ZooExecuteAction;
-import org.citrusframework.citrus.zookeeper.command.*;
+import org.citrusframework.citrus.zookeeper.command.AbstractZooCommand;
+import org.citrusframework.citrus.zookeeper.command.Create;
+import org.citrusframework.citrus.zookeeper.command.Delete;
+import org.citrusframework.citrus.zookeeper.command.Exists;
+import org.citrusframework.citrus.zookeeper.command.GetChildren;
+import org.citrusframework.citrus.zookeeper.command.GetData;
+import org.citrusframework.citrus.zookeeper.command.SetData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

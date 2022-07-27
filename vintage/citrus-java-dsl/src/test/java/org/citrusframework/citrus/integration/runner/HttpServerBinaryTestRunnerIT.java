@@ -16,11 +16,11 @@
 
 package org.citrusframework.citrus.integration.runner;
 
-import org.apache.http.entity.ContentType;
 import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestRunner;
 import org.citrusframework.citrus.message.DefaultMessage;
 import org.citrusframework.citrus.message.MessageType;
+import org.apache.http.entity.ContentType;
 import org.springframework.http.HttpStatus;
 import org.testng.annotations.Test;
 

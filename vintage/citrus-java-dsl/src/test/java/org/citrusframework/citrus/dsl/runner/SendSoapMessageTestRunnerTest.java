@@ -16,20 +16,24 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.SendMessageAction;
 import org.citrusframework.citrus.container.SequenceAfterTest;
 import org.citrusframework.citrus.container.SequenceBeforeTest;
+import org.citrusframework.citrus.message.MessageHeaders;
+import org.citrusframework.citrus.message.MessageType;
+import org.citrusframework.citrus.spi.ReferenceResolver;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.endpoint.Endpoint;
 import org.citrusframework.citrus.message.DefaultMessage;
 import org.citrusframework.citrus.message.Message;
-import org.citrusframework.citrus.message.MessageHeaders;
-import org.citrusframework.citrus.message.MessageType;
 import org.citrusframework.citrus.messaging.Producer;
 import org.citrusframework.citrus.report.TestActionListeners;
-import org.citrusframework.citrus.spi.ReferenceResolver;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.validation.builder.StaticMessageBuilder;
 import org.citrusframework.citrus.ws.actions.SendSoapMessageAction;
 import org.citrusframework.citrus.ws.client.WebServiceClient;
@@ -42,11 +46,10 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.HashMap;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

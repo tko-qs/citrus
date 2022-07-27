@@ -16,6 +16,10 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import javax.sql.DataSource;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.ExecutePLSQLAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
@@ -24,10 +28,6 @@ import org.springframework.core.io.Resource;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import javax.sql.DataSource;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
 
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.when;

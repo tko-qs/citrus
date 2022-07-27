@@ -16,7 +16,6 @@
 
 package org.citrusframework.citrus.integration.design;
 
-import org.apache.http.entity.ContentType;
 import org.citrusframework.citrus.annotations.CitrusEndpoint;
 import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
@@ -26,6 +25,7 @@ import org.citrusframework.citrus.http.config.annotation.HttpServerConfig;
 import org.citrusframework.citrus.http.server.HttpServer;
 import org.citrusframework.citrus.message.DefaultMessage;
 import org.citrusframework.citrus.message.MessageType;
+import org.apache.http.entity.ContentType;
 import org.springframework.http.HttpStatus;
 import org.springframework.util.SocketUtils;
 import org.testng.annotations.Test;

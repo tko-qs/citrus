@@ -41,7 +41,7 @@ public class GroovyActionTestRunnerIT extends TestNGCitrusTestRunner {
 
         groovy(builder -> builder.script("import org.citrusframework.citrus.*" + NEWLINE +
                 "import org.citrusframework.citrus.variable.*" + NEWLINE +
-                "import TestContext" + NEWLINE +
+                "import org.citrusframework.citrus.context.TestContext" + NEWLINE +
                 "import org.citrusframework.citrus.script.GroovyAction.ScriptExecutor" + NEWLINE +
                 "import org.testng.Assert" + NEWLINE +
                 "public class GScript implements ScriptExecutor {" + NEWLINE +

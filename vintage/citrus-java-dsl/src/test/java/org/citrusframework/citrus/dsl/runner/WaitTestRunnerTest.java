@@ -16,21 +16,23 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.io.File;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.condition.ActionCondition;
 import org.citrusframework.citrus.condition.Condition;
 import org.citrusframework.citrus.condition.FileCondition;
 import org.citrusframework.citrus.container.Wait;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.exceptions.TestCaseFailedException;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.File;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Martin Maher

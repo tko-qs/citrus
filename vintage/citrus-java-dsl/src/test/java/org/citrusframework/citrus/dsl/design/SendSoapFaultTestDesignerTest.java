@@ -16,13 +16,17 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.container.SequenceAfterTest;
 import org.citrusframework.citrus.container.SequenceBeforeTest;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
+import org.citrusframework.citrus.spi.ReferenceResolver;
 import org.citrusframework.citrus.endpoint.Endpoint;
 import org.citrusframework.citrus.report.TestActionListeners;
-import org.citrusframework.citrus.spi.ReferenceResolver;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.validation.builder.StaticMessageBuilder;
 import org.citrusframework.citrus.ws.actions.SendSoapFaultAction;
 import org.citrusframework.citrus.ws.server.WebServiceServer;
@@ -30,10 +34,6 @@ import org.mockito.Mockito;
 import org.springframework.core.io.Resource;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.HashMap;
 
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.when;

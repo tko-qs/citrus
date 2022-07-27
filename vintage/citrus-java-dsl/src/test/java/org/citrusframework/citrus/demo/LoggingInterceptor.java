@@ -18,9 +18,9 @@ package org.citrusframework.citrus.demo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.messaging.support.ChannelInterceptorAdapter;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.MessageChannel;
-import org.springframework.messaging.support.ChannelInterceptorAdapter;
 
 /**
  * @author Christoph Deppisch

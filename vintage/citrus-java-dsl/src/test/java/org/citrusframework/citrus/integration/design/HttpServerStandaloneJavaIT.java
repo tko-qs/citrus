@@ -16,8 +16,8 @@
 
 package org.citrusframework.citrus.integration.design;
 
-import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
+import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.exceptions.ValidationException;
 import org.citrusframework.citrus.http.message.HttpMessageHeaders;
 import org.hamcrest.Matchers;

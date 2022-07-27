@@ -18,11 +18,11 @@ package org.citrusframework.citrus.dsl.design;
 
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.ReceiveMessageAction;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.http.client.HttpClient;
 import org.citrusframework.citrus.http.message.HttpMessageBuilder;
 import org.citrusframework.citrus.http.message.HttpMessageHeaders;
 import org.citrusframework.citrus.http.server.HttpServer;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.validation.context.HeaderValidationContext;
 import org.citrusframework.citrus.validation.json.JsonMessageValidationContext;
 import org.citrusframework.citrus.validation.xml.XmlMessageValidationContext;

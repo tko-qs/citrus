@@ -17,9 +17,9 @@
 package org.citrusframework.citrus.integration.design;
 
 import org.citrusframework.citrus.actions.AbstractTestAction;
-import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
+import org.citrusframework.citrus.annotations.CitrusTest;
 import org.testng.annotations.Test;
 
 /**

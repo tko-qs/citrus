@@ -16,18 +16,18 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import java.util.HashMap;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.TestCaseMetaInfo.Status;
 import org.citrusframework.citrus.container.SequenceAfterTest;
 import org.citrusframework.citrus.container.SequenceBeforeTest;
+import org.citrusframework.citrus.spi.ReferenceResolver;
 import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.report.TestActionListeners;
-import org.citrusframework.citrus.spi.ReferenceResolver;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.HashMap;
 
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.when;

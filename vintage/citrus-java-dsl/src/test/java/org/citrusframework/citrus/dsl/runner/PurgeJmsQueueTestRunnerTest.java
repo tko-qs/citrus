@@ -16,16 +16,25 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import javax.jms.Connection;
+import javax.jms.ConnectionFactory;
+import javax.jms.Destination;
+import javax.jms.JMSException;
+import javax.jms.MessageConsumer;
+import javax.jms.Queue;
+import javax.jms.Session;
+
 import org.citrusframework.citrus.TestCase;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.jms.actions.PurgeJmsQueuesAction;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.jms.*;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

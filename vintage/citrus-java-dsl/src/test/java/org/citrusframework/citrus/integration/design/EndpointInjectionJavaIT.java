@@ -17,9 +17,7 @@
 package org.citrusframework.citrus.integration.design;
 
 import org.citrusframework.citrus.Citrus;
-import org.citrusframework.citrus.annotations.CitrusEndpoint;
-import org.citrusframework.citrus.annotations.CitrusFramework;
-import org.citrusframework.citrus.annotations.CitrusTest;
+import org.citrusframework.citrus.annotations.*;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
 import org.citrusframework.citrus.endpoint.Endpoint;
 import org.citrusframework.citrus.jms.config.annotation.JmsEndpointConfig;

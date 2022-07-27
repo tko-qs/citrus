@@ -16,20 +16,28 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
-import com.github.dockerjava.api.command.*;
-import com.github.dockerjava.api.model.Info;
-import com.github.dockerjava.api.model.Version;
+import java.util.UUID;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.docker.actions.DockerExecuteAction;
 import org.citrusframework.citrus.docker.client.DockerClient;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
+import com.github.dockerjava.api.command.CreateContainerCmd;
+import com.github.dockerjava.api.command.CreateContainerResponse;
+import com.github.dockerjava.api.command.InfoCmd;
+import com.github.dockerjava.api.command.InspectContainerCmd;
+import com.github.dockerjava.api.command.InspectContainerResponse;
+import com.github.dockerjava.api.command.PingCmd;
+import com.github.dockerjava.api.command.VersionCmd;
+import com.github.dockerjava.api.model.Info;
+import com.github.dockerjava.api.model.Version;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.UUID;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.doNothing;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

@@ -16,8 +16,8 @@
 
 package org.citrusframework.citrus.integration.design;
 
-import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
+import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.message.MessageType;
 import org.springframework.http.HttpStatus;
 import org.testng.annotations.Test;

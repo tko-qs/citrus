@@ -16,6 +16,11 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.container.SequenceAfterTest;
 import org.citrusframework.citrus.container.SequenceBeforeTest;
@@ -23,7 +28,23 @@ import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.dsl.builder.SeleniumActionBuilder;
 import org.citrusframework.citrus.report.TestActionListeners;
-import org.citrusframework.citrus.selenium.actions.*;
+import org.citrusframework.citrus.selenium.actions.AlertAction;
+import org.citrusframework.citrus.selenium.actions.CheckInputAction;
+import org.citrusframework.citrus.selenium.actions.ClearBrowserCacheAction;
+import org.citrusframework.citrus.selenium.actions.ClickAction;
+import org.citrusframework.citrus.selenium.actions.CloseWindowAction;
+import org.citrusframework.citrus.selenium.actions.FindElementAction;
+import org.citrusframework.citrus.selenium.actions.GetStoredFileAction;
+import org.citrusframework.citrus.selenium.actions.HoverAction;
+import org.citrusframework.citrus.selenium.actions.JavaScriptAction;
+import org.citrusframework.citrus.selenium.actions.NavigateAction;
+import org.citrusframework.citrus.selenium.actions.OpenWindowAction;
+import org.citrusframework.citrus.selenium.actions.SetInputAction;
+import org.citrusframework.citrus.selenium.actions.StartBrowserAction;
+import org.citrusframework.citrus.selenium.actions.StopBrowserAction;
+import org.citrusframework.citrus.selenium.actions.StoreFileAction;
+import org.citrusframework.citrus.selenium.actions.SwitchWindowAction;
+import org.citrusframework.citrus.selenium.actions.WaitUntilAction;
 import org.citrusframework.citrus.selenium.endpoint.SeleniumBrowser;
 import org.citrusframework.citrus.selenium.endpoint.SeleniumBrowserConfiguration;
 import org.citrusframework.citrus.selenium.endpoint.SeleniumHeaders;
@@ -41,11 +62,6 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
 
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.verify;

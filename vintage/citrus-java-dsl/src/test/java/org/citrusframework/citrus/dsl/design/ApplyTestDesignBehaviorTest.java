@@ -16,6 +16,8 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import java.util.List;
+
 import org.citrusframework.citrus.DefaultTestCase;
 import org.citrusframework.citrus.TestAction;
 import org.citrusframework.citrus.TestCase;
@@ -25,8 +27,6 @@ import org.citrusframework.citrus.container.Sequence;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.List;
 
 /**
  * @author Christoph Deppisch

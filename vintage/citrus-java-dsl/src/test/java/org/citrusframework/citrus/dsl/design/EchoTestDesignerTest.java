@@ -17,10 +17,11 @@
 package org.citrusframework.citrus.dsl.design;
 
 import org.citrusframework.citrus.TestCase;
-import org.citrusframework.citrus.actions.EchoAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import org.citrusframework.citrus.actions.EchoAction;
 
 /**
  * @author Christoph Deppisch

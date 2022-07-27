@@ -16,6 +16,8 @@
 
 package org.citrusframework.citrus.demo;
 
+import java.io.IOException;
+
 import org.citrusframework.citrus.demo.model.HelloRequest;
 import org.citrusframework.citrus.demo.model.HelloResponse;
 import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
@@ -28,8 +30,6 @@ import org.springframework.messaging.Message;
 import org.springframework.oxm.Marshaller;
 import org.springframework.oxm.Unmarshaller;
 import org.springframework.oxm.XmlMappingException;
-
-import java.io.IOException;
 
 /**
  * @author Christoph Deppisch

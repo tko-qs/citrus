@@ -1,1 +1,1 @@
-client=DockerClientConfigParser
+client=org.citrusframework.citrus.docker.config.annotation.DockerClientConfigParser

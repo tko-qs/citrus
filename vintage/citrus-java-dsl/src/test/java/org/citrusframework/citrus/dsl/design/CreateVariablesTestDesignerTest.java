@@ -17,10 +17,11 @@
 package org.citrusframework.citrus.dsl.design;
 
 import org.citrusframework.citrus.TestCase;
-import org.citrusframework.citrus.actions.CreateVariablesAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import org.citrusframework.citrus.actions.CreateVariablesAction;
 
 public class CreateVariablesTestDesignerTest extends UnitTestSupport {
 

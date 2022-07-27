@@ -29,8 +29,8 @@ The Spring application context holds your custom bean implementations. You can s
 
 [source,java]
 ----
-import AbstractTestAction;
-import TestContext;
+import org.citrusframework.citrus.actions.AbstractTestAction;
+import org.citrusframework.citrus.context.TestContext;
 
 public class SpecialDatabaseCleanupAction extends AbstractTestAction {
 

@@ -62,7 +62,7 @@ public class GroovyActionTest extends AbstractTestNGUnitTest {
     public void testCustomScriptExecutorImplementation() {
         String script = "import org.citrusframework.citrus.*\n" +
         		"import org.citrusframework.citrus.variable.*\n" +
-        		"import TestContext\n" +
+        		"import org.citrusframework.citrus.context.TestContext\n" +
         		"import org.citrusframework.citrus.script.GroovyAction.ScriptExecutor\n\n" +
         		"public class GScript implements ScriptExecutor {\n" +
         		"public void execute(TestContext context) {\n" +

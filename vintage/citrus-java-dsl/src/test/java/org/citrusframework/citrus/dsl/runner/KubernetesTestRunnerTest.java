@@ -16,27 +16,40 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.net.URL;
+import java.util.UUID;
+
+import org.citrusframework.citrus.TestCase;
+import org.citrusframework.citrus.kubernetes.actions.KubernetesExecuteAction;
+import org.citrusframework.citrus.kubernetes.client.KubernetesClient;
+import org.citrusframework.citrus.kubernetes.command.Info;
+import org.citrusframework.citrus.kubernetes.command.ListNamespaces;
+import org.citrusframework.citrus.kubernetes.command.ListNodes;
+import org.citrusframework.citrus.kubernetes.command.ListPods;
+import org.citrusframework.citrus.kubernetes.command.WatchEventResult;
+import org.citrusframework.citrus.kubernetes.command.WatchNodes;
+import org.citrusframework.citrus.kubernetes.command.WatchServices;
+import org.citrusframework.citrus.kubernetes.message.KubernetesMessageHeaders;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import com.github.dockerjava.api.command.CreateContainerResponse;
-import io.fabric8.kubernetes.api.model.*;
+import io.fabric8.kubernetes.api.model.NamespaceList;
+import io.fabric8.kubernetes.api.model.Node;
+import io.fabric8.kubernetes.api.model.NodeList;
+import io.fabric8.kubernetes.api.model.PodList;
+import io.fabric8.kubernetes.api.model.Service;
 import io.fabric8.kubernetes.client.Watch;
 import io.fabric8.kubernetes.client.Watcher;
 import io.fabric8.kubernetes.client.dsl.ClientMixedOperation;
 import io.fabric8.kubernetes.client.dsl.ClientNonNamespaceOperation;
-import org.citrusframework.citrus.TestCase;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
-import org.citrusframework.citrus.kubernetes.actions.KubernetesExecuteAction;
-import org.citrusframework.citrus.kubernetes.client.KubernetesClient;
-import org.citrusframework.citrus.kubernetes.command.*;
-import org.citrusframework.citrus.kubernetes.message.KubernetesMessageHeaders;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.net.URL;
-import java.util.UUID;
-
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

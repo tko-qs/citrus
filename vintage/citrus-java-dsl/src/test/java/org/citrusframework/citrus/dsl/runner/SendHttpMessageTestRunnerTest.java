@@ -16,11 +16,11 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
-import org.apache.http.entity.ContentType;
+import javax.servlet.http.Cookie;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.SendMessageAction;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.endpoint.resolver.EndpointUriResolver;
 import org.citrusframework.citrus.http.client.HttpClient;
 import org.citrusframework.citrus.http.message.HttpMessage;
@@ -31,14 +31,17 @@ import org.citrusframework.citrus.message.Message;
 import org.citrusframework.citrus.message.MessageHeaders;
 import org.citrusframework.citrus.message.MessageType;
 import org.citrusframework.citrus.messaging.Producer;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
+import org.apache.http.entity.ContentType;
 import org.mockito.Mockito;
 import org.springframework.http.HttpMethod;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.servlet.http.Cookie;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.doAnswer;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

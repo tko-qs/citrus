@@ -18,13 +18,13 @@ package org.citrusframework.citrus.dsl.design;
 
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.SendMessageAction;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
+import org.citrusframework.citrus.spi.ReferenceResolver;
 import org.citrusframework.citrus.endpoint.resolver.EndpointUriResolver;
 import org.citrusframework.citrus.http.client.HttpClient;
 import org.citrusframework.citrus.http.message.HttpMessageBuilder;
 import org.citrusframework.citrus.http.message.HttpMessageHeaders;
 import org.citrusframework.citrus.message.DefaultMessage;
-import org.citrusframework.citrus.spi.ReferenceResolver;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.validation.builder.StaticMessageBuilder;
 import org.mockito.Mockito;
 import org.springframework.http.HttpMethod;

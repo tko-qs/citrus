@@ -92,7 +92,7 @@ NOTE: The implicit TestContext access that was shown in the previous sample work
 ----
 import org.citrusframework.citrus.*
 import org.citrusframework.citrus.variable.*
-import TestContext
+import org.citrusframework.citrus.context.TestContext
 import org.citrusframework.citrus.script.GroovyAction.ScriptExecutor
 
 public class GScript implements ScriptExecutor {
@@ -133,7 +133,7 @@ The next example deals with advanced Groovy code and writing whole classes. We w
       <![CDATA[
         import org.citrusframework.citrus.*
         import org.citrusframework.citrus.variable.*
-        import TestContext
+        import org.citrusframework.citrus.context.TestContext
         import org.citrusframework.citrus.script.GroovyAction.ScriptExecutor
 
         public class GScript implements ScriptExecutor {

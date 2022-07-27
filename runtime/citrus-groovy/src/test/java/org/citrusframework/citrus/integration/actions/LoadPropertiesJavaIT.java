@@ -44,7 +44,7 @@ public class LoadPropertiesJavaIT extends TestNGCitrusSpringSupport {
 
         run(groovy("import org.citrusframework.citrus.*\n" +
           "import org.citrusframework.citrus.variable.*\n" +
-          "import TestContext\n" +
+          "import org.citrusframework.citrus.context.TestContext\n" +
           "import org.citrusframework.citrus.script.GroovyAction.ScriptExecutor\n" +
           "import org.testng.Assert;\n" +
           "public class GScript implements ScriptExecutor {\n" +

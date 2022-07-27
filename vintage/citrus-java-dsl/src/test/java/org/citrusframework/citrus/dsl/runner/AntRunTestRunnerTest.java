@@ -16,11 +16,11 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
-import org.apache.tools.ant.BuildEvent;
-import org.apache.tools.ant.BuildListener;
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.AntRunAction;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
+import org.apache.tools.ant.BuildEvent;
+import org.apache.tools.ant.BuildListener;
 import org.mockito.Mockito;
 import org.testng.Assert;
 import org.testng.annotations.Test;

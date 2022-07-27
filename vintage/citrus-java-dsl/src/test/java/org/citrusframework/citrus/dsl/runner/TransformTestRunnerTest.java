@@ -16,6 +16,8 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.io.IOException;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.TransformAction;
 import org.citrusframework.citrus.context.TestContext;
@@ -23,8 +25,6 @@ import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.springframework.core.io.ClassPathResource;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.io.IOException;
 
 public class TransformTestRunnerTest extends UnitTestSupport {
     @Test

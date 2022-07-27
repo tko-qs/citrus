@@ -16,11 +16,19 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.ExecuteSQLQueryAction;
 import org.citrusframework.citrus.context.TestContext;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.script.ScriptTypes;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.validation.script.ScriptValidationContext;
 import org.citrusframework.citrus.validation.script.sql.SqlResultSetScriptValidator;
 import org.mockito.Mockito;
@@ -31,11 +39,11 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.*;
-
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.any;
+import static org.mockito.Mockito.anyString;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch

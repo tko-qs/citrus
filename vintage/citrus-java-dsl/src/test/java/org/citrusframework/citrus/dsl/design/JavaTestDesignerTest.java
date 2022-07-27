@@ -16,6 +16,9 @@
 
 package org.citrusframework.citrus.dsl.design;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.EchoAction;
 import org.citrusframework.citrus.actions.JavaAction;
@@ -23,9 +26,6 @@ import org.citrusframework.citrus.context.TestContext;
 import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class JavaTestDesignerTest extends UnitTestSupport {
 

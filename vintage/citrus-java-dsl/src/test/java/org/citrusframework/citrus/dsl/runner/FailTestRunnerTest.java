@@ -18,8 +18,8 @@ package org.citrusframework.citrus.dsl.runner;
 
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.FailAction;
-import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.citrusframework.citrus.exceptions.CitrusRuntimeException;
+import org.citrusframework.citrus.dsl.UnitTestSupport;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

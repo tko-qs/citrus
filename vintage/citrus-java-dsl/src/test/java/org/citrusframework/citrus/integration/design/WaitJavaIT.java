@@ -16,6 +16,10 @@
 
 package org.citrusframework.citrus.integration.design;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.Collections;
+
 import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.design.AbstractTestBehavior;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
@@ -29,10 +33,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpMethod;
 import org.springframework.util.SocketUtils;
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Collections;
 
 
 @Test

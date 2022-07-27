@@ -16,8 +16,8 @@
 
 package org.citrusframework.citrus.integration.design;
 
-import org.citrusframework.citrus.annotations.CitrusTest;
 import org.citrusframework.citrus.dsl.testng.TestNGCitrusTestDesigner;
+import org.citrusframework.citrus.annotations.CitrusTest;
 import org.springframework.core.io.ClassPathResource;
 import org.testng.annotations.Test;
 
@@ -43,7 +43,7 @@ public class GroovyActionJavaIT extends TestNGCitrusTestDesigner {
 
         groovy("import org.citrusframework.citrus.*" + NEWLINE +
                 "import org.citrusframework.citrus.variable.*" + NEWLINE +
-                "import TestContext" + NEWLINE +
+                "import org.citrusframework.citrus.context.TestContext" + NEWLINE +
                 "import org.citrusframework.citrus.script.GroovyAction.ScriptExecutor" + NEWLINE +
                 "import org.testng.Assert" + NEWLINE +
                 "public class GScript implements ScriptExecutor {" + NEWLINE +

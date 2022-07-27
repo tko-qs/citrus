@@ -16,8 +16,13 @@
 
 package org.citrusframework.citrus.dsl.runner;
 
-import com.github.fge.jsonschema.core.exceptions.ProcessingException;
-import com.github.fge.jsonschema.main.JsonSchema;
+import javax.xml.transform.Source;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.citrusframework.citrus.TestCase;
 import org.citrusframework.citrus.actions.ReceiveMessageAction;
 import org.citrusframework.citrus.container.SequenceAfterTest;
@@ -57,6 +62,8 @@ import org.citrusframework.citrus.variable.dictionary.xml.NodeMappingDataDiction
 import org.citrusframework.citrus.xml.Marshaller;
 import org.citrusframework.citrus.xml.MarshallerAdapter;
 import org.citrusframework.citrus.xml.StringSource;
+import com.github.fge.jsonschema.core.exceptions.ProcessingException;
+import com.github.fge.jsonschema.main.JsonSchema;
 import org.hamcrest.core.AnyOf;
 import org.mockito.Mockito;
 import org.springframework.core.io.ClassPathResource;
@@ -69,16 +76,17 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXParseException;
 
-import javax.xml.transform.Source;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
-
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.anyOf;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.nullValue;
 import static org.mockito.Mockito.any;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.anyLong;
+import static org.mockito.Mockito.atLeastOnce;
+import static org.mockito.Mockito.eq;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.reset;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 /**
  * @author Christoph Deppisch
